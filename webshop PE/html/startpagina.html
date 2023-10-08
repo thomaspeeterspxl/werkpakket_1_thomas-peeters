@@ -3,10 +3,96 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
-<nav class="navbar">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+</head>
+<body class="body">
+<nav class="navbar">
+    <img src="assets/logo.png" alt="nav image">
+    <ul>
+        <li><a href="producten.html">Producten</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html"><i class="fa-solid fa-user"></i></a></li>
+        <li><a href="index.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
+    </ul>
 </nav>
+<section class="about">
+<!--    <div class="about-left">-->
+<!--        <img src="assets/logo-lp.png" alt="Picture of our team">-->
+<!--    </div>-->
+    <div class="about-right">
+        <h1 class="main-heading">RetroSpin Records</h1>
+        <h3 class="sub-heading">Only for the best old school music experience</h3>
+        <div class="stars">
+            <i class="fa-solid fa-record-vinyl"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
+
+        </div>
+        <p class="description">Welkom bij 'GroovyTunes & Vinyl Vibes' - Jouw ultieme bestemming voor alle dingen
+            vinyl!</p>
+
+        <p class="description">Bij ons draait alles om de tijdloze magie van vinyl. Ontdek een wereld vol warme,
+            nostalgische klanken
+            terwijl je door onze uitgebreide collectie LP's bladert. Van legendarische klassiekers tot zeldzame
+            vondsten, we hebben ze allemaal.</p>
+
+        <p class="description">Maar dat is nog niet alles! We zijn niet alleen een bron voor prachtige vinylplaten, we
+            bieden ook een
+            selectie hoogwaardige platenspelers, naalden en accessoires die elke muziekliefhebber zal bekoren.</p>
+
+        <p class="description">Bij 'GroovyTunes & Vinyl Vibes' geloven we in het koesteren van de authentieke
+            geluidservaring en de
+            tijdloze esthetiek van vinyl. Onze passie is om jou te voorzien van de beste muziekbeleving, of je nu een
+            doorgewinterde verzamelaar bent of net begint aan je vinylavontuur.</p>
+
+        <p class="description">Dus, laat de platen draaien, geniet van de knisperende geluiden en duik in de rijke
+            geschiedenis van muziek
+            - allemaal met een vleugje retro charme. Begin je vinylreis vandaag nog bij 'GroovyTunes & Vinyl
+            Vibes'!"</p>
+
+        <div class="stars">
+            <i class="fas fa-star-of-life star"></i>
+            <i class="fas fa-star-of-life star"></i>
+            <i class="fas fa-star-of-life star"></i>
+        </div>
+    </div>
+</section>
+<section class="featured-products">
+    <h2>Producten in de Kijker</h2>
+    <div class="product-card">
+        <img src="product1.jpg" alt="Product 1">
+        <h3>Product 1</h3>
+        <p>Korte omschrijving van Product 1.</p>
+        <p>Prijs: $50</p>
+    </div>
+    <!-- Voeg meer productkaarten toe zoals hierboven -->
+</section>
+<div class="container">
+    <section class="company-info">
+        <h2>Ons Bedrijf</h2>
+        <p>Bedrijfsnaam: Voorbeeldbedrijf</p>
+        <p>Adres: Voorbeeldstraat 123, 1234 AB Voorbeeldstad</p>
+        <p>Telefoon: +31 123 456 789</p>
+        <p>E-mail: info@voorbeeldbedrijf.com</p>
+    </section>
+
+    <form action="mailto:jouwemail@example.com" method="post" enctype="text/plain">
+        <h2>Contacteer ons</h2>
+        <label for="naam">Naam:</label>
+        <input type="text" name="naam" id="naam" required>
+
+        <label for="email">E-mailadres:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="bericht">Bericht:</label>
+        <textarea name="bericht" id="bericht" rows="5" required></textarea>
+
+        <input type="submit" value="Versturen">
+    </form>
+</div>
 </body>
 </html>

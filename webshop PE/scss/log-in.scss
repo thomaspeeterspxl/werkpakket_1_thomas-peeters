@@ -1,12 +1,12 @@
 @use 'global' as *;
 
-body {
+.body-login {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   margin: 0;
-  background-color: #f0f0f0;
+
 }
 
 .login-container {
@@ -43,7 +43,6 @@ input {
 button {
   background-color: $primary-color;
   color: #fff;
-  //border: $primary-color solid 5px;
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
