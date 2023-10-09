@@ -11,18 +11,15 @@
 </head>
 <body class="body">
 <nav class="navbar">
-    <img src="assets/logo.png" alt="nav image">
+    <img src="../assets/Layer%206.png" alt="nav image">
     <ul>
         <li><a href="producten.html">Producten</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#contact">Contact</a></li>
         <li><a href="index.html"><i class="fa-solid fa-user"></i></a></li>
         <li><a href="index.html"><i class="fa-solid fa-cart-shopping"></i></a></li>
     </ul>
 </nav>
 <section class="about">
-<!--    <div class="about-left">-->
-<!--        <img src="assets/logo-lp.png" alt="Picture of our team">-->
-<!--    </div>-->
     <div class="about-right">
         <h1 class="main-heading">RetroSpin Records</h1>
         <h3 class="sub-heading">Only for the best old school music experience</h3>
@@ -32,8 +29,8 @@
             <i class="fa-solid fa-record-vinyl"></i>
 
         </div>
-        <p class="description">Welkom bij 'GroovyTunes & Vinyl Vibes' - Jouw ultieme bestemming voor alle dingen
-            vinyl!</p>
+        <p class="description">Welkom bij 'GroovyTunes & Vinyl Vibes' - Jouw ultieme webshop voor alle
+            vinyl spullen!</p>
 
         <p class="description">Bij ons draait alles om de tijdloze magie van vinyl. Ontdek een wereld vol warme,
             nostalgische klanken
@@ -55,44 +52,90 @@
             Vibes'!"</p>
 
         <div class="stars">
-            <i class="fas fa-star-of-life star"></i>
-            <i class="fas fa-star-of-life star"></i>
-            <i class="fas fa-star-of-life star"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
+            <i class="fa-solid fa-record-vinyl"></i>
         </div>
     </div>
 </section>
-<section class="featured-products">
-    <h2>Producten in de Kijker</h2>
-    <div class="product-card">
-        <img src="webshop PE/assets/eminem-lp.jpg" alt="Product 1">
-        <h3>Product 1</h3>
-        <p>Korte omschrijving van Product 1.</p>
-        <p>Prijs: $50</p>
+<section class="gallery">
+    <h1 class="gallery-title">Moet je gezien hebben</h1>
+    <div class="cards-wrapper">
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Eminem - The Eminem Show (2 LP)</h1>
+                <p class="card-overlay-paragraph">Price: €44</p>
+<!--                <button class="card-overlay-button">Order now</button>-->
+            </div>
+            <img src="../assets/eminem-lp.png" alt="eminem lp" class="card-image">
+        </div>
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Eminem - Slim Shady (2 LP)</h1>
+                <p class="card-overlay-paragraph">Price: €44</p>
+<!--                <button class="card-overlay-button">Order now</button>-->
+            </div>
+            <img src="../assets/eminem-lp2.png" alt="Eminem - Slim Shady (2 LP)" class="card-image">
+        </div>
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Wtaps X Authentic Syndicate - Wings</h1>
+                <p class="card-overlay-paragraph">Price: €125</p>
+                <button class="card-overlay-button">Order now</button>
+            </div>
+            <img src="./assets/" alt="Wtaps X Authentic Syndicate" class="card-image">
+        </div>
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Undefeated X Zoom Kobe 1 ProTro - White Gum</h1>
+                <p class="card-overlay-paragraph">Price: €625</p>
+                <button class="card-overlay-button">Order now</button>
+            </div>
+            <img src="./assets/" alt="Image Undefeated X Zoom Kobe 1 ProTro" class="card-image">
+        </div>
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Air Jordan 4 Retro - Red Thunder</h1>
+                <p class="card-overlay-paragraph">Price: €360</p>
+                <button class="card-overlay-button">Order now</button>
+            </div>
+            <img src="./assets/" alt="Image Air Jordan 4 Retro" class="card-image">
+        </div>
+        <div class="card">
+            <div class="card-overlay">
+                <h1 class="card-overlay-heading">Off-White X Air Force 1 Low - Brooklyn</h1>
+                <p class="card-overlay-paragraph">Price: €1325</p>
+                <button class="card-overlay-button">Order now</button>
+            </div>
+            <img src="./assets/" alt="Image Off-White X Air Force 1 Low" class="card-image">
+        </div>
     </div>
-    <!-- Voeg meer productkaarten toe zoals hierboven -->
 </section>
-<div class="container">
-    <section class="company-info">
-        <h2>Ons Bedrijf</h2>
-        <p>Bedrijfsnaam: Voorbeeldbedrijf</p>
-        <p>Adres: Voorbeeldstraat 123, 1234 AB Voorbeeldstad</p>
-        <p>Telefoon: +31 123 456 789</p>
-        <p>E-mail: info@voorbeeldbedrijf.com</p>
-    </section>
+<section id="contact">
+    <div class="container">
+        <section class="company-info">
+            <h2>Ons Bedrijf</h2>
+            <p>Bedrijfsnaam: Voorbeeldbedrijf</p>
+            <p>Adres: Voorbeeldstraat 123, 1234 AB Voorbeeldstad</p>
+            <p>Telefoon: +31 123 456 789</p>
+            <p>E-mail: info@voorbeeldbedrijf.com</p>
+        </section>
 
-    <form action="mailto:jouwemail@example.com" method="post" enctype="text/plain">
-        <h2>Contacteer ons</h2>
-        <label for="naam">Naam:</label>
-        <input type="text" name="naam" id="naam" required>
+        <form action="mailto:jouwemail@example.com" method="post" enctype="text/plain">
+            <h2>Contacteer ons</h2>
+            <label for="naam">Naam:</label>
+            <input type="text" name="naam" id="naam" required>
 
-        <label for="email">E-mailadres:</label>
-        <input type="email" name="email" id="email" required>
+            <label for="email">E-mailadres:</label>
+            <input type="email" name="email" id="email" required>
 
-        <label for="bericht">Bericht:</label>
-        <textarea name="bericht" id="bericht" rows="5" required></textarea>
+            <label for="bericht">Bericht:</label>
+            <textarea name="bericht" id="bericht" rows="5" required></textarea>
 
-        <input type="submit" value="Versturen">
-    </form>
-</div>
+            <input type="submit" value="Versturen">
+        </form>
+    </div>
+</section>
+
 </body>
 </html>

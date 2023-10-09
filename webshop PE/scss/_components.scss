@@ -1,0 +1,64 @@
+@use 'global' as *;
+
+.card {
+  width: 30%;
+  height: 25vw;
+  position: relative;
+  overflow: hidden;
+  border-radius: 25px;
+  border: 2px solid $color-black;
+  margin: 10px;
+  align-items: center;
+  &:hover .card-overlay {
+    left: 0;
+  }
+
+  &-overlay{
+    @extend %fullSpace;
+    @include flexLayout();
+    position: absolute;
+    top: 0;
+    left: -100%;
+    background-color: rgba($color-secundary, .7);
+    color: $color-black;
+    z-index: 10;
+    flex-direction: column;
+    transition: ease-in .7s;
+
+    &-heading {
+      @include textStyles(capitalize);
+      font-family: $font-nunito;
+      font-size: 50px;
+      text-align: center;
+    }
+
+    &-paragraph {
+      @include textStyles(capitalize);
+      font-family: $font-josefinSans;
+      font-size: 30px;
+      margin-bottom: 30px;
+    }
+
+    &-button{
+      width: 150px;
+      height: 40px;
+      color: $primary-color;
+      background: $color-white;
+      font-family:$font-josefinSans;
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: 1px solid $secondary-color;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+
+  &-image {
+    @extend %fullSpace;
+    object-fit: contain;
+    padding: 5px;
+  }
+}

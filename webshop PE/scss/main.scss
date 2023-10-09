@@ -2,4 +2,5 @@
 @use 'log-in';
 @use 'startpagina';
 @use 'contact';
-@use 'layout';
+@use '_layout';
+@use '_components';
