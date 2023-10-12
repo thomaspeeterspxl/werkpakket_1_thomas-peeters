@@ -1,5 +1,39 @@
 @use 'global' as *;
 
+.main-heading {
+  font-family: $font-dancingScript;
+  font-size: 40px;
+  font-weight: 300;
+  color: $secondary-color;
+  margin: 20px 0;
+}
+.sub-heading {
+  font-family: $font-josefinSans;
+  font-size: 20px;
+  font-weight: 300;
+  color: $secondary-color;
+  margin-bottom: 10px;
+}
+.button{
+  background-color: $quartair-color;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+
+  &-detail{
+    background-color: $quartair-color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+    margin: 10px;
+  }
+}
 .card {
   width: 30%;
   height: 25vw;
@@ -19,7 +53,7 @@
     position: absolute;
     top: 0;
     left: -100%;
-    background-color: rgba($color-secundary, .7);
+    background-color: rgba($secondary-color, .7);
     color: $color-black;
     z-index: 10;
     flex-direction: column;
@@ -37,22 +71,6 @@
       font-family: $font-josefinSans;
       font-size: 30px;
       margin-bottom: 30px;
-    }
-
-    &-button{
-      width: 150px;
-      height: 40px;
-      color: $primary-color;
-      background: $color-white;
-      font-family:$font-josefinSans;
-      font-size: 14px;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      border: 1px solid $secondary-color;
-      border-radius: 30px;
-      outline: none;
-      cursor: pointer;
     }
   }
 
