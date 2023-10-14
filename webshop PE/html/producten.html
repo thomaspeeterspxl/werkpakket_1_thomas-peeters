@@ -5,10 +5,10 @@
     <title>Title</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body class="body">
 <nav class="navbar">
-    <!--    <a href="index.html"><img src="../assets/Layer%206.png" alt="nav image"></a>-->
     <img src="../assets/Layer%206.png" alt="nav image">
     <ul>
         <li><a href="startpagina.html"><i class="fa-solid fa-house"></i></a></li>
@@ -32,7 +32,7 @@
 </section>
 
 <main>
-    <article data-eigenschap="eigenschap1" >
+    <article>
         <h2>Eminem - The Eminem Show (2 LP)</h2>
         <img src="../assets/eminem-lp.png"  alt="ps">
         <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem, deleniti, eum explicabo
@@ -41,15 +41,15 @@
         <p class="prijs">44,00 EUR</p>
         <button class="button-detail"><a href="detail-pagina.html">lees meer</a></button>
     </article>
-    <article data-eigenschap="eigenschap1">
+    <article>
         <h2>The Best of Sinatra</h2>
         <img src="../assets/frank-lp.jpg" alt="ps">
         <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
         <p class="prijs">27,00 EUR</p>
-<!--        <button class="button-detail"><a href="#">lees meer</a></button>-->
+        <button class="button-detail"><a href="#">lees meer</a></button>
 
     </article>
-    <article data-eigenschap="eigenschap1">
+    <article>
         <h2>JORIS</h2>
         <img src="../assets/joris-lp.jpg" alt="ps">
         <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem, deleniti, eum explicabo
@@ -77,7 +77,7 @@
         <button class="button-detail"><a href="#">lees meer</a></button>
 
     </article>
-    <article data-eigenschap="eigenschap2">
+    <article>
         <h2>vinyl/LP opbergrek</h2>
         <img src="../assets/lp-houder.jpg" alt="ps">
         <p class="tekst">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam amet at autem, deleniti, eum explicabo
@@ -115,8 +115,14 @@
             repellat.</p>
         <p class="prijs">337,00 EUR</p>
         <button class="button-detail"><a href="#">lees meer</a></button>
-
     </article>
 </main>
+<div class="pagination">
+    <a href="#" class="page-link">Vorige</a>
+    <a href="#" class="page-link active">1</a>
+    <a href="#" class="page-link">2</a>
+    <a href="#" class="page-link">3</a>
+    <a href="#" class="page-link">Volgende</a>
+</div>
 </body>
 </html>

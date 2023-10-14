@@ -6,13 +6,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../css/main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="../script.js"></script>
-
 
 </head>
 <body class="body">
 <nav class="navbar">
-<!--    <a href="index.html"><img src="../assets/Layer%206.png" alt="nav image"></a>-->
     <img src="../assets/Layer%206.png" alt="nav image">
     <ul>
         <li><a href="startpagina.html"><i class="fa-solid fa-house"></i></a></li>
@@ -32,7 +29,7 @@
             <i class="fa-solid fa-record-vinyl"></i>
 
         </div>
-        <p class="description">Welkom bij 'GroovyTunes & Vinyl Vibes' - Jouw ultieme webshop voor alle
+        <p class="description">Welkom bij 'RetroSpin Records' - Jouw ultieme webshop voor alle
             vinyl spullen!</p>
 
         <p class="description">Bij ons draait alles om de tijdloze magie van vinyl. Ontdek een wereld vol warme,
@@ -44,15 +41,14 @@
             bieden ook een
             selectie hoogwaardige platenspelers, naalden en accessoires die elke muziekliefhebber zal bekoren.</p>
 
-        <p class="description">Bij 'GroovyTunes & Vinyl Vibes' geloven we in het koesteren van de authentieke
+        <p class="description">Bij 'RetroSpin Records' geloven we in het koesteren van de authentieke
             geluidservaring en de
             tijdloze esthetiek van vinyl. Onze passie is om jou te voorzien van de beste muziekbeleving, of je nu een
             doorgewinterde verzamelaar bent of net begint aan je vinylavontuur.</p>
 
         <p class="description">Dus, laat de platen draaien, geniet van de knisperende geluiden en duik in de rijke
             geschiedenis van muziek
-            - allemaal met een vleugje retro charme. Begin je vinylreis vandaag nog bij 'GroovyTunes & Vinyl
-            Vibes'!"</p>
+            - allemaal met een vleugje retro charme. Begin je vinylreis vandaag nog bij 'RetroSpin Records'!</p>
 
         <div class="stars">
             <i class="fa-solid fa-record-vinyl"></i>
@@ -101,10 +97,10 @@
         </div>
         <div class="card">
             <div class="card-overlay">
-                <h1 class="card-overlay-heading">Off-White X Air Force 1 Low - Brooklyn</h1>
-                <p class="card-overlay-paragraph">Price: €1325</p>
+                <h1 class="card-overlay-heading"></h1>
+                <p class="card-overlay-paragraph"></p>
             </div>
-            <img src="./assets/" alt="Image Off-White X Air Force 1 Low" class="card-image">
+<!--            <img src="./assets/" alt="" class="card-image">-->
         </div>
     </div>
 </section>
@@ -117,22 +113,20 @@
             <p>Telefoon: +31 123 456 789</p>
             <p>E-mail: info@voorbeeldbedrijf.com</p>
         </section>
+    <form action="mailto:jouwemail@example.com" method="post" enctype="text/plain">
+        <h2>Contacteer ons</h2>
+        <label for="naam">Naam:</label>
+        <input type="text" name="naam" id="naam" required>
 
-        <form action="mailto:jouwemail@example.com" method="post" enctype="text/plain">
-            <h2>Contacteer ons</h2>
-            <label for="naam">Naam:</label>
-            <input type="text" name="naam" id="naam" required>
+        <label for="email">E-mailadres:</label>
+        <input type="email" name="email" id="email" required>
 
-            <label for="email">E-mailadres:</label>
-            <input type="email" name="email" id="email" required>
+        <label for="bericht">Bericht:</label>
+        <textarea name="bericht" id="bericht" rows="5" required></textarea>
 
-            <label for="bericht">Bericht:</label>
-            <textarea name="bericht" id="bericht" rows="5" required></textarea>
-
-            <input type="submit" value="Versturen">
-        </form>
+        <input type="submit" value="Versturen">
+    </form>
     </div>
 </section>
-
 </body>
 </html>

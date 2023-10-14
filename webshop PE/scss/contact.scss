@@ -14,44 +14,44 @@
   p{
     margin: 2rem 0 0 2rem;
   }
+
 }
 
 h2 {
   text-align: center;
 }
+  form {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
 
-form {
-  flex: 1;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-}
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
 
-label {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
 
-input[type="text"],
-input[type="email"],
-textarea {
-  padding: 10px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-}
+  textarea {
+    height: 50px;
+  }
 
-textarea {
-  height: 50px;
-}
-
-input[type="submit"] {
-  background-color: $quartair-color;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 18px;
-}
+  input[type="submit"] {
+    background-color: $tertiair-color;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+  }

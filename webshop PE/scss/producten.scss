@@ -32,7 +32,7 @@ main article p.tekst {
 
 main article p.prijs {
   padding: 10px;
-  background-color: $quartair-color;
+  background-color: $tertiair-color;
   color: #fff;
   text-align: center;
   font-weight: 700;
@@ -41,81 +41,21 @@ main article p.prijs {
   width: 50%;
 }
 
-.body-detail {
+.pagination {
+  display: flex;
   justify-content: center;
-  align-items: center;
-  justify-items: center;
-  .card-detail {
-    display: flex;
-    width: 80%;
-    position: absolute;
-    background: $color-white;
-    margin: 0 auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
-    transition: all 0.3s;
-
-
-    .photo {
-
-      padding: 30px;
-      //width: 45%;
-      text-align: center;
-      float: left;
-
-      .photo-detail {
-        max-height: 240px;
-      }
-
-    }
-
-    .description-detail {
-      //box-sizing: border-box;
-      padding: 30px;
-      float: left;
-      width: 55%;
-      border-left: 2px solid #efefef;
-
-      h1 {
-        color: $secondary-color;
-        font-weight: 300;
-        padding-top: 15px;
-        margin: 0;
-        font-size: 30px;
-      }
-
-      h2 {
-        color: $secondary-color;
-        margin: 0;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 20px;
-      }
-
-      h4 {
-        margin: 0;
-        color: $secondary-color;
-        text-transform: uppercase;
-        font-weight: 500;
-        font-size: 12px
-      }
-
-      p {
-        //font-size: 12px;
-        line-height: 20px;
-        color: $secondary-color;
-        padding: 20px 0;
-        margin: 0;
-      }
-      ol{
-        display: inline-block;
-        padding: 10px;
-      }
-    }
-  }
+  list-style: none;
+  padding: 20px;
 }
+
+
+.page-link {
+  margin: 0 8px;
+  padding: 8px 16px;
+  background-color: $tertiair-color;
+  border-radius: 5px;
+  text-decoration: none;
+  color: $color-white;
+}
+
+
