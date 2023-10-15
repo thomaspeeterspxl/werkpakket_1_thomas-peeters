@@ -1,44 +1,43 @@
 @use 'global' as *;
 
-main {
+.main {
   width: 100%;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
-}
 
-main article {
-  margin: 2%;
-  width: 18.5%;
-  padding: 1%;
-  border-radius: 5px;
-  border: 3px solid $secondary-color;
-  background-color: $color-white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  &-products{
+    margin: 2%;
+    width: 18.5%;
+    padding: 1%;
+    border-radius: 5px;
+    border: 3px solid $secondary-color;
+    background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $font-josefinSans;
 
-main article img {
-  width: 100%;
-  margin: 20px 0;
-}
-
-main article p.tekst {
-  flex: 1;
-}
-
-main article p.prijs {
-  padding: 10px;
-  background-color: $tertiair-color;
-  color: #fff;
-  text-align: center;
-  font-weight: 700;
-  border-radius: 5px;
-  margin: 20px 0 0 0;
-  width: 50%;
+    &-foto{
+      width: 100%;
+      margin: 20px 0;
+    }
+    &-tekst{
+      flex: 1;
+    }
+    &-prijs{
+      padding: 10px;
+      background-color: $tertiair-color;
+      color: #fff;
+      text-align: center;
+      font-weight: 700;
+      border-radius: 5px;
+      margin: 20px 0 0 0;
+      width: 50%;
+    }
+  }
 }
 
 .pagination {
@@ -46,16 +45,18 @@ main article p.prijs {
   justify-content: center;
   list-style: none;
   padding: 20px;
+
+  .page-link {
+    margin: 0 8px;
+    padding: 8px 16px;
+    background-color: $tertiair-color;
+    border-radius: 5px;
+    text-decoration: none;
+    color: $color-white;
+  }
 }
 
 
-.page-link {
-  margin: 0 8px;
-  padding: 8px 16px;
-  background-color: $tertiair-color;
-  border-radius: 5px;
-  text-decoration: none;
-  color: $color-white;
-}
+
 
 

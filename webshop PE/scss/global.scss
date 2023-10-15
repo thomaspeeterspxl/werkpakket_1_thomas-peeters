@@ -5,7 +5,8 @@ $tertiair-color: #84B5A5;
 $color-black: #000;
 $color-white: #fff;
 
-$font-dancingScript: 'Dancing Script', cursive;
+// fonts
+$font-Sono: 'sono';
 $font-josefinSans: 'Josefin Sans', sans-serif;
 $font-nunito: 'Nunito', sans-serif;
 
@@ -16,12 +17,11 @@ $font-nunito: 'Nunito', sans-serif;
 
 }
 
-a {
+.link {
   margin-top: 10px;
   text-decoration: none;
   color: $color-white;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
 @mixin flexLayout() {

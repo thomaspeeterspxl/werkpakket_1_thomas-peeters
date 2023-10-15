@@ -10,11 +10,7 @@
   background-color: $primary-color;
   display: flex;
   justify-content: space-between;
-
-  & a img {
-    margin: 15px;
-    height: 106px;
-  }
+  font-family: $font-Sono;
 
   & ul {
     display: flex;
@@ -44,7 +40,7 @@
   display: flex;
   align-items: center;
 
-  &-right {
+  &-tekst {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -76,7 +72,7 @@
   padding: 20px 0 ;
   .gallery-title{
     text-align: center;
-    font-family: $font-dancingScript;
+    font-family: $font-Sono;
   }
   .cards-wrapper {
     display: flex;
@@ -86,5 +82,5 @@
 }
 .tekst-overzichtspagina{
   margin: 2rem 0 0 2rem;
-  font-family: "Dancing Script", cursive;
+  font-family: $font-nunito;
 }

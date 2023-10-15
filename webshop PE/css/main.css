@@ -3,12 +3,11 @@
   padding: 0;
 }
 
-a {
+.link {
   margin-top: 10px;
   text-decoration: none;
   color: #fff;
   font-size: 16px;
-  transition: color 0.3s;
 }
 
 .card-overlay, .card-image {
@@ -34,6 +33,7 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   padding: 20px;
   text-align: center;
+  font-family: "Nunito", sans-serif;
 }
 .login-container h1 {
   font-size: 24px;
@@ -44,10 +44,10 @@ a {
   flex-direction: column;
   gap: 10px;
 }
-.login-container label {
+.login-container form-label {
   font-weight: bold;
 }
-.login-container input {
+.login-container form input {
   padding: 10px;
   border: 1px solid #fff;
   border-radius: 5px;
@@ -59,7 +59,7 @@ a {
   display: flex;
   background-color: antiquewhite;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  font-family: "Dancing Script", cursive;
+  font-family: "sono";
 }
 
 .company-info {
@@ -122,10 +122,7 @@ input[type=submit] {
   background-color: antiquewhite;
   display: flex;
   justify-content: space-between;
-}
-.navbar a img {
-  margin: 15px;
-  height: 106px;
+  font-family: "sono";
 }
 .navbar ul {
   display: flex;
@@ -152,7 +149,7 @@ input[type=submit] {
   display: flex;
   align-items: center;
 }
-.about-right {
+.about-tekst {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -160,13 +157,13 @@ input[type=submit] {
   padding: 0 100px;
   box-sizing: border-box;
 }
-.about-right .stars {
+.about-tekst .stars {
   margin: 30px 0;
 }
-.about-right .star + .star {
+.about-tekst .star + .star {
   margin-left: 10px;
 }
-.about-right .description {
+.about-tekst .description {
   font-family: "Nunito", sans-serif;
   font-size: 25px;
   color: #000;
@@ -180,7 +177,7 @@ input[type=submit] {
 }
 .gallery .gallery-title {
   text-align: center;
-  font-family: "Dancing Script", cursive;
+  font-family: "sono";
 }
 .gallery .cards-wrapper {
   display: flex;
@@ -189,11 +186,11 @@ input[type=submit] {
 
 .tekst-overzichtspagina {
   margin: 2rem 0 0 2rem;
-  font-family: "Dancing Script", cursive;
+  font-family: "Nunito", sans-serif;
 }
 
 .main-heading {
-  font-family: "Dancing Script", cursive;
+  font-family: "sono";
   font-size: 40px;
   font-weight: 300;
   color: #BEA888;
@@ -215,7 +212,6 @@ input[type=submit] {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
 }
 .button-detail {
   background-color: #84B5A5;
@@ -224,7 +220,6 @@ input[type=submit] {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
   margin: 10px;
 }
 
@@ -383,7 +378,7 @@ input[type=submit] {
     flex-direction: column;
   }
 }
-main {
+.main {
   width: 100%;
   margin: 0 auto;
   display: flex;
@@ -391,8 +386,7 @@ main {
   border-top-right-radius: 5px;
   border-top-left-radius: 5px;
 }
-
-main article {
+.main-products {
   margin: 2%;
   width: 18.5%;
   padding: 1%;
@@ -402,18 +396,16 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-family: "Josefin Sans", sans-serif;
 }
-
-main article img {
+.main-products-foto {
   width: 100%;
   margin: 20px 0;
 }
-
-main article p.tekst {
+.main-products-tekst {
   flex: 1;
 }
-
-main article p.prijs {
+.main-products-prijs {
   padding: 10px;
   background-color: #84B5A5;
   color: #fff;
@@ -430,8 +422,7 @@ main article p.prijs {
   list-style: none;
   padding: 20px;
 }
-
-.page-link {
+.pagination .page-link {
   margin: 0 8px;
   padding: 8px 16px;
   background-color: #84B5A5;
@@ -467,34 +458,35 @@ main article p.prijs {
   width: 55%;
   border-left: 2px solid #efefef;
 }
-.detail .detail-card .detail-description h1 {
+.detail .detail-card .detail-description-title {
   color: #BEA888;
   font-weight: 300;
   padding-top: 15px;
   margin: 0;
   font-size: 30px;
+  text-align: left;
 }
-.detail .detail-card .detail-description h2 {
+.detail .detail-card .detail-description-name {
   color: #BEA888;
   margin: 0;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 20px;
 }
-.detail .detail-card .detail-description h4 {
+.detail .detail-card .detail-description-price {
   margin: 0;
   color: #BEA888;
   text-transform: uppercase;
   font-weight: 500;
   font-size: 12px;
 }
-.detail .detail-card .detail-description p {
+.detail .detail-card .detail-description-tekst {
   line-height: 20px;
   color: #BEA888;
   padding: 20px 0;
   margin: 0;
 }
-.detail .detail-card .detail-description ol {
+.detail .detail-card .detail-description-list {
   display: inline-block;
   padding: 10px;
 }
